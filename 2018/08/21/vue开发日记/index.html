@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="TudoRex小屋">
 <meta property="og:description" content="2018-08-21开发表格行编辑功能 按行编辑将el-table中的scope传入到方法beginEdit进行绑定， 弹出对话框编辑 编辑后可回滚 利用pureJs = Object.assign({}, scope.row)可以将reactive对象(scope.row)导出为纯js对象 利用Object.assign(scope.row, pureJs)可以为reactive对象进行赋值">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-21T09:27:01.410Z">
+<meta property="og:updated_time" content="2018-08-21T11:25:32.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue开发日记">
 <meta name="twitter:description" content="2018-08-21开发表格行编辑功能 按行编辑将el-table中的scope传入到方法beginEdit进行绑定， 弹出对话框编辑 编辑后可回滚 利用pureJs = Object.assign({}, scope.row)可以将reactive对象(scope.row)导出为纯js对象 利用Object.assign(scope.row, pureJs)可以为reactive对象进行赋值">
@@ -96,11 +96,12 @@
 </li>
 <li>可提交</li>
 </ol>
+<h2 id="gson-deserialize时部分字段为空"><a href="#gson-deserialize时部分字段为空" class="headerlink" title="gson deserialize时部分字段为空"></a>gson deserialize时部分字段为空</h2><p>原因是这些字段名是多单词下划线小写格式, 需要配置gson:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Gson gson = <span class="keyword">new</span> GsonBuilder()</span><br><span class="line">    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)</span><br><span class="line">    .create()</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjl3i9pok0000fohh66e8ajmy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjl3ic5iv00013chhm01ytx57" class="article-share-link">Share</a>
       
       
     </footer>
