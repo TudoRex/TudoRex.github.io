@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="TudoRex小屋">
 <meta property="og:description" content="2018-08-21开发表格行编辑功能 按行编辑将el-table中的scope传入到方法beginEdit进行绑定， 弹出对话框编辑 编辑后可回滚 利用pureJs = Object.assign({}, scope.row)可以将reactive对象(scope.row)导出为纯js对象 利用Object.assign(scope.row, pureJs)可以为reactive对象进行赋值">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-21T11:25:32.594Z">
+<meta property="og:updated_time" content="2018-08-23T10:18:31.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue开发日记">
 <meta name="twitter:description" content="2018-08-21开发表格行编辑功能 按行编辑将el-table中的scope传入到方法beginEdit进行绑定， 弹出对话框编辑 编辑后可回滚 利用pureJs = Object.assign({}, scope.row)可以将reactive对象(scope.row)导出为纯js对象 利用Object.assign(scope.row, pureJs)可以为reactive对象进行赋值">
@@ -97,27 +97,22 @@
 <li>可提交</li>
 </ol>
 <h2 id="gson-deserialize时部分字段为空"><a href="#gson-deserialize时部分字段为空" class="headerlink" title="gson deserialize时部分字段为空"></a>gson deserialize时部分字段为空</h2><p>原因是这些字段名是多单词下划线小写格式, 需要配置gson:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Gson gson = <span class="keyword">new</span> GsonBuilder()</span><br><span class="line">    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)</span><br><span class="line">    .create()</span><br></pre></td></tr></table></figure></p>
+<h1 id="2018-08-23"><a href="#2018-08-23" class="headerlink" title="2018-08-23"></a>2018-08-23</h1><h2 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h2><ul>
+<li>(element-ui)table组件的expand列只能有一列</li>
+</ul>
+<h2 id="LocalDate-如何获取前一天"><a href="#LocalDate-如何获取前一天" class="headerlink" title="LocalDate 如何获取前一天"></a>LocalDate 如何获取前一天</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LocalDate day = LocalDate.parse(<span class="string">"2018-08-01"</span>);</span><br><span class="line">LocalDate yesterday = day.minus(Period.ofDays(<span class="number">1</span>));</span><br></pre></td></tr></table></figure>
+<h2 id="Vue中如何watch-对象的单个属性"><a href="#Vue中如何watch-对象的单个属性" class="headerlink" title="Vue中如何watch 对象的单个属性"></a>Vue中如何watch 对象的单个属性</h2><p>用<strong>obj.a</strong>来监听obj的a属性:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">  <span class="string">'obj.a'</span>: &#123;</span><br><span class="line">    handler(newName, oldName) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'obj.a changed'</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    immediate: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// deep: true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125; </span><br><span class="line">作者：Dunizb</span><br><span class="line">链接：https:<span class="comment">//juejin.im/post/5ae91fa76fb9a07aa7677543</span></span><br><span class="line">来源：掘金</span><br><span class="line">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjl3ic5iv00013chhm01ytx57" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjl6eyg9900001ghh7v1i06wd" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2018/08/21/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -151,10 +146,6 @@
         
           <li>
             <a href="/2018/08/21/vue开发日记/">vue开发日记</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/21/hello-world/">Hello World</a>
           </li>
         
       </ul>
