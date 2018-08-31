@@ -5,20 +5,19 @@
   
 
   
-  <title>vs2017开发笔记 | TudoRex小屋</title>
+  <title>活动目录AD | TudoRex小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2018-08-24调研海康威视的sdk， 又要摸vs2017 c++工程了 引用动态链接库dll目录的配置方法在VS2015中引用动态链接库dll主要有两种方法：  法1：配置属性-&amp;gt;调试-&amp;gt;环境：输入path=包含dll文件的文件夹路径，  【注意】path(空格)=路径、path=(空格)路径、path(空格)=(空格)路径等写法都会导致dll引用失败。  法2：将dll文件拷贝">
-<meta name="keywords" content="vs2017">
+  <meta name="description" content="部署Apache James 时的LDAP配置org.apache.james.user.ldap.ReadOnlyUsersLDAPRepositoryIts constituent attributes are defined as follows:  ldapHost: The URL of the LDAP server to connect to. principal: (optiona">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vs2017开发笔记">
-<meta property="og:url" content="http://yoursite.com/2018/08/24/vs2017开发笔记/index.html">
+<meta property="og:title" content="活动目录AD">
+<meta property="og:url" content="http://yoursite.com/2018/08/26/活动目录ActiveDirectory/index.html">
 <meta property="og:site_name" content="TudoRex小屋">
-<meta property="og:description" content="2018-08-24调研海康威视的sdk， 又要摸vs2017 c++工程了 引用动态链接库dll目录的配置方法在VS2015中引用动态链接库dll主要有两种方法：  法1：配置属性-&amp;gt;调试-&amp;gt;环境：输入path=包含dll文件的文件夹路径，  【注意】path(空格)=路径、path=(空格)路径、path(空格)=(空格)路径等写法都会导致dll引用失败。  法2：将dll文件拷贝">
+<meta property="og:description" content="部署Apache James 时的LDAP配置org.apache.james.user.ldap.ReadOnlyUsersLDAPRepositoryIts constituent attributes are defined as follows:  ldapHost: The URL of the LDAP server to connect to. principal: (optiona">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-24T09:55:10.942Z">
+<meta property="og:updated_time" content="2018-08-31T01:36:21.270Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vs2017开发笔记">
-<meta name="twitter:description" content="2018-08-24调研海康威视的sdk， 又要摸vs2017 c++工程了 引用动态链接库dll目录的配置方法在VS2015中引用动态链接库dll主要有两种方法：  法1：配置属性-&amp;gt;调试-&amp;gt;环境：输入path=包含dll文件的文件夹路径，  【注意】path(空格)=路径、path=(空格)路径、path(空格)=(空格)路径等写法都会导致dll引用失败。  法2：将dll文件拷贝">
+<meta name="twitter:title" content="活动目录AD">
+<meta name="twitter:description" content="部署Apache James 时的LDAP配置org.apache.james.user.ldap.ReadOnlyUsersLDAPRepositoryIts constituent attributes are defined as follows:  ldapHost: The URL of the LDAP server to connect to. principal: (optiona">
   
     <link rel="alternate" href="/atom.xml" title="TudoRex小屋" type="application/atom+xml">
   
@@ -65,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-vs2017开发笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-活动目录ActiveDirectory" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/24/vs2017开发笔记/" class="article-date">
-  <time datetime="2018-08-24T09:39:48.000Z" itemprop="datePublished">2018-08-24</time>
+    <a href="/2018/08/26/活动目录ActiveDirectory/" class="article-date">
+  <time datetime="2018-08-26T01:39:31.000Z" itemprop="datePublished">2018-08-26</time>
 </a>
     
   </div>
@@ -79,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      vs2017开发笔记
+      活动目录AD
     </h1>
   
 
@@ -87,45 +86,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2018-08-24"><a href="#2018-08-24" class="headerlink" title="2018-08-24"></a>2018-08-24</h1><p>调研海康威视的sdk， 又要摸vs2017 c++工程了</p>
-<h2 id="引用动态链接库dll目录的配置方法"><a href="#引用动态链接库dll目录的配置方法" class="headerlink" title="引用动态链接库dll目录的配置方法"></a>引用动态链接库dll目录的配置方法</h2><p>在VS2015中引用动态链接库dll主要有两种方法：</p>
+        <h1 id="部署Apache-James-时的LDAP配置"><a href="#部署Apache-James-时的LDAP配置" class="headerlink" title="部署Apache James 时的LDAP配置"></a>部署Apache James 时的LDAP配置</h1><p><a href="https://james.apache.org/server/3/apidocs/org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository.html" target="_blank" rel="noopener">org.apache.james.user.ldap.ReadOnlyUsersLDAPRepository</a><br>Its constituent attributes are defined as follows:</p>
 <ul>
-<li>法1：配置属性-&gt;调试-&gt;环境：输入path=包含dll文件的文件夹路径，</li>
+<li>ldapHost: The URL of the LDAP server to connect to.</li>
+<li>principal: (optional) The name (DN) of the user with which to initially bind to the LDAP server.</li>
+<li>credentials: (optional) The password with which to initially bind to the LDAP server.</li>
+<li>userBase:The context within which to search for user entities.</li>
+<li>userIdAttribute:The name of the LDAP attribute which holds user ids. For example “uid” for Apache DS, or “sAMAccountName” for Microsoft Active Directory.</li>
+<li>userObjectClass:The objectClass value for user nodes below the userBase. For example “inetOrgPerson” for Apache DS, or “user” for Microsoft Active Directory.</li>
+<li>maxRetries: (optional, default = 0) The maximum number of times to retry a failed operation. -1 means retry forever.</li>
+<li>retryStartInterval: (optional, default = 0) The interval in milliseconds to wait before the first retry. If &gt; 0, subsequent retries are made at double the proceeding one up to the retryMaxInterval described below. If = 0, the next retry is 1 and subsequent retries proceed as above.</li>
+<li>retryMaxInterval: (optional, default = 60) The maximum interval in milliseconds to wait between retries</li>
+<li>retryIntervalScale: (optional, default = 1000) The amount by which to multiply each retry interval. The default value of 1000 (milliseconds) is 1 second, so the default        retryMaxInterval of 60 is 60 seconds, or 1 minute.</li>
 </ul>
-<p>【注意】path(空格)=路径、path=(空格)路径、path(空格)=(空格)路径等写法都会导致dll引用失败。</p>
-<ul>
-<li>法2：将dll文件拷贝到生成的.exe所在的文件夹中</li>
-</ul>
-<p><a href="https://ask.csdn.net/questions/356811" target="_blank" rel="noopener">exe加载DLL的时候会有一系列的搜索路径</a><br>还有通过vs工程配置中的环境：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">工程的本地化配置：</span><br><span class="line"></span><br><span class="line">通过设置vs工程的环境变量，实现对单个工程本地化配置的目标，环境变量可随整个工程迁移，设置方法：vs工程属性--&gt;配置属性--&gt;调试--&gt;环境，例如，我们要引用../../bin/目录里面的dll，那么我们可以设置为：path=%path%;..\..\bin</span><br></pre></td></tr></table></figure></p>
-<p>因为我把lib和dll的库文件放到一个目录中， 头文件单独放， 把引用目录， 库目录都设置了一下， 还有就是调试时的环境变量也配置了， 目前可以运行时找到dll</p>
+<h1 id="Active-Directory-委派控制与权限"><a href="#Active-Directory-委派控制与权限" class="headerlink" title="Active Directory 委派控制与权限"></a>Active Directory 委派控制与权限</h1><h2 id="如何查看活动目录的权限"><a href="#如何查看活动目录的权限" class="headerlink" title="如何查看活动目录的权限"></a>如何查看活动目录的权限</h2><ol>
+<li>在Active Directory 控制台-&gt;查看-&gt;高级功能</li>
+<li>选择某个对象，右键属性-&gt;安全页<br>##<br><a href="https://social.microsoft.com/Forums/es-ES/13444af2-8718-4707-b80e-56ad4273741c" target="_blank" rel="noopener">将这些权限只应用到这个容器中的对像和/或容器上”是什么意思</a><br><a href="http://blog.sina.com.cn/s/blog_549298ca0100ssff.html" target="_blank" rel="noopener">NTFS权限分析与应用</a></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/vs2017开发笔记/" data-id="cjlhby54o0003x4hh870j4s3o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/26/活动目录ActiveDirectory/" data-id="cjlhby54v0005x4hhsjpcu69x" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vs2017/">vs2017</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2018/08/24/开源方案汇总/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/30/无盘技术/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          开源方案汇总
+          无盘技术
         
       </div>
     </a>
   
   
-    <a href="/2018/08/21/vue开发日记/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/08/25/部署内网邮件服务器/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">vue开发日记</div>
+      <div class="article-nav-title">部署内网邮件服务器</div>
     </a>
   
 </nav>
