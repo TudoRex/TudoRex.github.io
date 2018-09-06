@@ -62,6 +62,123 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-java-gui" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/06/java-gui/" class="article-date">
+  <time datetime="2018-09-06T03:22:03.000Z" itemprop="datePublished">2018-09-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/06/java-gui/">java-gui</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://blog.csdn.net/fishjam/article/details/50531594" target="_blank" rel="noopener"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/06/java-gui/" data-id="cjlqab5xe00002ghh359yv1ev" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MFC-ATL" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/05/MFC-ATL/" class="article-date">
+  <time datetime="2018-09-05T02:44:53.000Z" itemprop="datePublished">2018-09-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/05/MFC-ATL/">MFC_ATL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ANSI-UNICODE-字符串转换"><a href="#ANSI-UNICODE-字符串转换" class="headerlink" title="ANSI UNICODE 字符串转换"></a>ANSI UNICODE 字符串转换</h1><p><strong>头文件atlconv.h</strong><br>MFC有个特点， 使用typedef过的char和wchar在ANSI和UNICODE环境下，因此需要看准API用到的字符串类型并转换<br>MFC的函数名， 不带A或者W表示变通型，根据编译环境不同等价于带A或者带W的函数</p>
+<ol>
+<li>CA2W  Convert ANSI to WIDE<br>还有很多其他和此类似的转换宏</li>
+</ol>
+<p>经测试， jna传下来的char*字符串用CA2W转码结果不对， 后来使用mbstowcs转码成功</p>
+<p>自己写了一个构造类， 构造参数列表使用了strlen， 结果造成ntdll的堆异常，后采用类c的写法，添加init方法进行初始化</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/05/MFC-ATL/" data-id="cjlqab5xn00012ghhmmy2s10h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-native-access" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/04/java-native-access/" class="article-date">
+  <time datetime="2018-09-04T03:25:56.000Z" itemprop="datePublished">2018-09-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/04/java-native-access/">java-native-access</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="开源项目java-native-access-jna"><a href="#开源项目java-native-access-jna" class="headerlink" title="开源项目java-native-access(jna)"></a>开源项目java-native-access(jna)</h1><p>该项目是一种更为便捷的java访问c代码(动态库)的封装层,以4.5.2版本为例，包括jna.jar和jna-platform.jar<br>其中jna.jar提供封装c库的能力， jna-platform.jar 以jna.jar提供的机制为基础封装windows等平台的native api调用</p>
+<p><a href="https://blog.csdn.net/lovesomnus/article/details/45073343" target="_blank" rel="noopener"></a><br><a href="https://www.eshayne.com/jnaex/" target="_blank" rel="noopener">JNA Examples</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/04/java-native-access/" data-id="cjlqab5xw00032ghhm8z72xu3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-门禁布线" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/30/门禁布线/" class="article-date">
@@ -89,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/30/门禁布线/" data-id="cjlhby5480000x4hh3o8nchmr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/30/门禁布线/" data-id="cjlqab5y600062ghhe7osnfvc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,7 +245,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/30/无盘技术/" data-id="cjlhby54h0001x4hhb180cyey" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/30/无盘技术/" data-id="cjlqab5ya00092ghhcvlnumo6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -175,13 +292,20 @@
 </ul>
 <h1 id="Active-Directory-委派控制与权限"><a href="#Active-Directory-委派控制与权限" class="headerlink" title="Active Directory 委派控制与权限"></a>Active Directory 委派控制与权限</h1><h2 id="如何查看活动目录的权限"><a href="#如何查看活动目录的权限" class="headerlink" title="如何查看活动目录的权限"></a>如何查看活动目录的权限</h2><ol>
 <li>在Active Directory 控制台-&gt;查看-&gt;高级功能</li>
-<li>选择某个对象，右键属性-&gt;安全页<br>##<br><a href="https://social.microsoft.com/Forums/es-ES/13444af2-8718-4707-b80e-56ad4273741c" target="_blank" rel="noopener">将这些权限只应用到这个容器中的对像和/或容器上”是什么意思</a><br><a href="http://blog.sina.com.cn/s/blog_549298ca0100ssff.html" target="_blank" rel="noopener">NTFS权限分析与应用</a></li>
+<li>选择某个对象，右键属性-&gt;安全页<br>##<br><a href="https://social.microsoft.com/Forums/es-ES/13444af2-8718-4707-b80e-56ad4273741c" target="_blank" rel="noopener">将这些权限只应用到这个容器中的对像和/或容器上”是什么意思</a><br><a href="http://blog.sina.com.cn/s/blog_549298ca0100ssff.html" target="_blank" rel="noopener">NTFS权限分析与应用</a><h2 id="net-直接操作AD"><a href="#net-直接操作AD" class="headerlink" title=".net 直接操作AD"></a>.net 直接操作AD</h2><strong>System.DirectoryServices.ActiveDirectory</strong></li>
+</ol>
+<h2 id="Windows-Native-API"><a href="#Windows-Native-API" class="headerlink" title="Windows Native API"></a>Windows Native API</h2><p><a href="https://docs.microsoft.com/en-us/windows/desktop/api/lmaccess/nf-lmaccess-netuserchangepassword" target="_blank" rel="noopener">NetUserChangePassword</a> 有bug， 改了一次可行，<br>再改报2245错误码<br><a href="https://gist.github.com/magnetikonline/0ccdabfec58eb1929c997d22e7341e45" target="_blank" rel="noopener">Enable LDAP over SSL (LDAPS) for Microsoft Active Directory servers</a></p>
+<h2 id="Java-操作-ADSI的方案"><a href="#Java-操作-ADSI的方案" class="headerlink" title="Java 操作 ADSI的方案"></a>Java 操作 ADSI的方案</h2><h2 id="COM-对象"><a href="#COM-对象" class="headerlink" title="COM 对象"></a>COM 对象</h2><p><a href="https://stackoverflow.com/questions/44016328/accessing-com-interface-with-jna" target="_blank" rel="noopener"></a><br><a href="https://stackoverflow.com/questions/8564675/how-to-query-activedirectory-from-native-win32-i-e-not-net-code/8567800#8567800" target="_blank" rel="noopener"></a><br><a href="https://stackoverflow.com/questions/7111618/win32-how-to-validate-credentials-against-active-directory" target="_blank" rel="noopener"></a><br><a href="">Jacob</a></p>
+<h1 id="调用ADSI的血泪史"><a href="#调用ADSI的血泪史" class="headerlink" title="调用ADSI的血泪史"></a>调用ADSI的血泪史</h1><ol>
+<li>CA2W()宏转码后的字符串为0xfe字节流， 原因不详, 实际上是CA2WEx的模板类封装， 首先猜测是否是代码页的问题， 测试各种CP后依旧</li>
+<li>尝试了mbstowcs系列函数后终于成功了</li>
+<li>为了便于WCHAR转码缓冲区的管理速写了一个ArrayBuffer模板类， 一开始在构造参数列表中使用了strlen， 发现运行时AdsOpenObject报出莫名其妙的段错误，后改为构造函数不初始化<br>内部buffer， 单独调用init(count)进行内存分配(c style malloc), 终于没有段错误了</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/26/活动目录ActiveDirectory/" data-id="cjlhby54v0005x4hhsjpcu69x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/26/活动目录ActiveDirectory/" data-id="cjlqab5y300052ghhhi11uf8w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -241,12 +365,13 @@
 </ol>
 <h1 id="Apache-James-调研日志"><a href="#Apache-James-调研日志" class="headerlink" title="Apache James 调研日志"></a>Apache James 调研日志</h1><h2 id="2018-08-29"><a href="#2018-08-29" class="headerlink" title="2018-08-29"></a>2018-08-29</h2><p>下载spring版本并解压到/opt/, 按照教程逐一配置conf下的各个模块的配置，还有需要在lib目录下软链接postgre jdbc driver</p>
 <h3 id="暂不采用mysql的原因"><a href="#暂不采用mysql的原因" class="headerlink" title="暂不采用mysql的原因"></a>暂不采用mysql的原因</h3><p>mysql（innodb）的索引长度不能超过3072bytes，用utf8mb4很容易就超过了该限制，导致jpa初始化建表时报索引过长错误</p>
-<h2 id="2018-08-30"><a href="#2018-08-30" class="headerlink" title="2018-08-30"></a>2018-08-30</h2><p>配置mx记录</p>
+<h2 id="2018-08-30"><a href="#2018-08-30" class="headerlink" title="2018-08-30"></a>2018-08-30</h2><p>配置mx记录, imap主机和smtp主机均设置为mail.beiruosi.nanjing</p>
+<h2 id="2018-09-01-配置"><a href="#2018-09-01-配置" class="headerlink" title="2018-09-01 配置"></a>2018-09-01 配置</h2><p><a href="http://alikevin2011.iteye.com/blog/1173118" target="_blank" rel="noopener"></a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/25/部署内网邮件服务器/" data-id="cjlhby54y0006x4hhr8xlww6f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/25/部署内网邮件服务器/" data-id="cjlqab5y800072ghhbd53phrz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -278,31 +403,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://blog.csdn.net/leansmall/article/details/72614488" target="_blank" rel="noopener">试试54款开源服务器软件</a><br>要支持Active Directory</p>
-<ol>
-<li>Cyrus IMAP</li>
-<li><del>Kopano</del><br>团队协作方案不需要</li>
-<li><del>Zarafa</del><br>forked by <strong>Kopano</strong></li>
-<li>UW IMAP</li>
-<li>Apache James</li>
-<li>Qpopper</li>
-<li><del>hMailServer</del><br><a href="https://books.google.co.uk/books?id=kfRWvKSePmAC&amp;dq=essential+com&amp;printsec=frontcover&amp;source=bn&amp;hl=en&amp;sa=X&amp;oi=book_result&amp;ct=result#v=onepage&amp;q=essential%20com&amp;f=false" target="_blank" rel="noopener">Essential COM</a><br>可以用.net interop 访问COM<br><del>pass</del>由于有异常的COMException和不可维护性</li>
-<li>agorum core</li>
-<li>Zentyal</li>
-<li>Exim</li>
-<li>Citadel</li>
-<li>Courier Mail Server</li>
-<li>Kolab</li>
-<li>Postfix</li>
-<li>OpenSMTPD</li>
-<li>Haraka</li>
-<li>Dovecot<br><a href="https://docs.iredmail.org/active.directory.html#enable-active-directory-integration-in-dovecot" target="_blank" rel="noopener">Integrate Microsoft Active Directory in iRedMail</a></li>
-</ol>
+        <p><a href="https://blog.csdn.net/leansmall/article/details/72614488" target="_blank" rel="noopener">试试54款开源服务器软件</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/开源方案汇总/" data-id="cjlhby5500007x4hhcxhju5kt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/24/开源方案汇总/" data-id="cjlqab5yf000a2ghhsn9w6ckr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/open-source/">open_source</a></li></ul>
@@ -351,7 +457,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/vs2017开发笔记/" data-id="cjlhby54o0003x4hh870j4s3o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/24/vs2017开发笔记/" data-id="cjlqab5xt00022ghhsrqwb82x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vs2017/">vs2017</a></li></ul>
@@ -405,7 +511,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjlhby54l0002x4hh6yjd14r2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjlqab5yi000b2ghhhheomfcq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
@@ -449,7 +555,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
     </div>
   </div>
 
@@ -462,23 +568,23 @@
       <ul>
         
           <li>
+            <a href="/2018/09/06/java-gui/">java-gui</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/05/MFC-ATL/">MFC_ATL</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/04/java-native-access/">java-native-access</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/30/门禁布线/">门禁布线</a>
           </li>
         
           <li>
             <a href="/2018/08/30/无盘技术/">无盘技术</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/26/活动目录ActiveDirectory/">活动目录AD</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/25/部署内网邮件服务器/">部署内网邮件服务器</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/24/开源方案汇总/">开源方案汇总</a>
           </li>
         
       </ul>
