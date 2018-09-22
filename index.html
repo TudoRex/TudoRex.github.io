@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-java-gui" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Python3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/06/java-gui/" class="article-date">
-  <time datetime="2018-09-06T03:22:03.000Z" itemprop="datePublished">2018-09-06</time>
+    <a href="/2018/09/22/Python3/" class="article-date">
+  <time datetime="2018-09-22T02:11:09.000Z" itemprop="datePublished">2018-09-22</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/06/java-gui/">java-gui</a>
+      <a class="article-title" href="/2018/09/22/Python3/">Python3</a>
     </h1>
   
 
@@ -84,12 +84,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://blog.csdn.net/fishjam/article/details/50531594" target="_blank" rel="noopener"></a></p>
+        <ul>
+<li><p>BeautifoulSoup</p>
+</li>
+<li><p>pyinstaller<br><code>pyinstaller -F &lt;python entry file&gt;</code> 打包成独立应用</p>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/06/java-gui/" data-id="cjlqab5xe00002ghh359yv1ev" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/22/Python3/" data-id="cjmctgm4b000328hheiev7ldb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,10 +104,10 @@
 
 
   
-    <article id="post-MFC-ATL" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-WindowsServerAdmin" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/05/MFC-ATL/" class="article-date">
-  <time datetime="2018-09-05T02:44:53.000Z" itemprop="datePublished">2018-09-05</time>
+    <a href="/2018/09/22/WindowsServerAdmin/" class="article-date">
+  <time datetime="2018-09-22T01:46:56.000Z" itemprop="datePublished">2018-09-22</time>
 </a>
     
   </div>
@@ -113,124 +118,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/MFC-ATL/">MFC_ATL</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ANSI-UNICODE-字符串转换"><a href="#ANSI-UNICODE-字符串转换" class="headerlink" title="ANSI UNICODE 字符串转换"></a>ANSI UNICODE 字符串转换</h1><p><strong>头文件atlconv.h</strong><br>MFC有个特点， 使用typedef过的char和wchar在ANSI和UNICODE环境下，因此需要看准API用到的字符串类型并转换<br>MFC的函数名， 不带A或者W表示变通型，根据编译环境不同等价于带A或者带W的函数</p>
-<ol>
-<li>CA2W  Convert ANSI to WIDE<br>还有很多其他和此类似的转换宏</li>
-</ol>
-<p>经测试， jna传下来的char*字符串用CA2W转码结果不对， 后来使用mbstowcs转码成功</p>
-<p>自己写了一个构造类， 构造参数列表使用了strlen， 结果造成ntdll的堆异常，后采用类c的写法，添加init方法进行初始化</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/05/MFC-ATL/" data-id="cjlqab5xn00012ghhmmy2s10h" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-java-native-access" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/04/java-native-access/" class="article-date">
-  <time datetime="2018-09-04T03:25:56.000Z" itemprop="datePublished">2018-09-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/04/java-native-access/">java-native-access</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="开源项目java-native-access-jna"><a href="#开源项目java-native-access-jna" class="headerlink" title="开源项目java-native-access(jna)"></a>开源项目java-native-access(jna)</h1><p>该项目是一种更为便捷的java访问c代码(动态库)的封装层,以4.5.2版本为例，包括jna.jar和jna-platform.jar<br>其中jna.jar提供封装c库的能力， jna-platform.jar 以jna.jar提供的机制为基础封装windows等平台的native api调用</p>
-<p><a href="https://blog.csdn.net/lovesomnus/article/details/45073343" target="_blank" rel="noopener"></a><br><a href="https://www.eshayne.com/jnaex/" target="_blank" rel="noopener">JNA Examples</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/04/java-native-access/" data-id="cjlqab5xw00032ghhm8z72xu3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-门禁布线" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/30/门禁布线/" class="article-date">
-  <time datetime="2018-08-30T08:36:55.000Z" itemprop="datePublished">2018-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/30/门禁布线/">门禁布线</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.cabling-system.com/html/2018-03/15_287168.html" target="_blank" rel="noopener">门禁系统的施工布线规范和注意事项</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/30/门禁布线/" data-id="cjlqab5y600062ghhe7osnfvc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-无盘技术" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/30/无盘技术/" class="article-date">
-  <time datetime="2018-08-30T03:14:23.000Z" itemprop="datePublished">2018-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/30/无盘技术/">无盘技术</a>
+      <a class="article-title" href="/2018/09/22/WindowsServerAdmin/">WindowsServerAdmin</a>
     </h1>
   
 
@@ -239,13 +127,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li><a href="https://www.computeraudiophile.com/forums/topic/26705-diskless-windows-10-pc-setup-procedure/" target="_blank" rel="noopener"></a></li>
+<li>kvm guest 为windows server时无法ACPI正常关机的问题<br><a href="https://serverfault.com/questions/844188/shut-down-windows-server-2012r2-kvm-vm" target="_blank" rel="noopener"></a></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/30/无盘技术/" data-id="cjlqab5ya00092ghhcvlnumo6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/22/WindowsServerAdmin/" data-id="cjmctgm4d000428hhnd234k9r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -255,10 +143,10 @@
 
 
   
-    <article id="post-活动目录ActiveDirectory" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-LinuxAdmin" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/26/活动目录ActiveDirectory/" class="article-date">
-  <time datetime="2018-08-26T01:39:31.000Z" itemprop="datePublished">2018-08-26</time>
+    <a href="/2018/09/21/LinuxAdmin/" class="article-date">
+  <time datetime="2018-09-21T05:57:43.000Z" itemprop="datePublished">2018-09-21</time>
 </a>
     
   </div>
@@ -269,7 +157,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/26/活动目录ActiveDirectory/">活动目录AD</a>
+      <a class="article-title" href="/2018/09/21/LinuxAdmin/">LinuxAdmin</a>
     </h1>
   
 
@@ -277,101 +165,102 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="部署Apache-James-时的LDAP配置"><a href="#部署Apache-James-时的LDAP配置" class="headerlink" title="部署Apache James 时的LDAP配置"></a>部署Apache James 时的LDAP配置</h1><p><a href="https://james.apache.org/server/3/apidocs/org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository.html" target="_blank" rel="noopener">org.apache.james.user.ldap.ReadOnlyUsersLDAPRepository</a><br>Its constituent attributes are defined as follows:</p>
-<ul>
-<li>ldapHost: The URL of the LDAP server to connect to.</li>
-<li>principal: (optional) The name (DN) of the user with which to initially bind to the LDAP server.</li>
-<li>credentials: (optional) The password with which to initially bind to the LDAP server.</li>
-<li>userBase:The context within which to search for user entities.</li>
-<li>userIdAttribute:The name of the LDAP attribute which holds user ids. For example “uid” for Apache DS, or “sAMAccountName” for Microsoft Active Directory.</li>
-<li>userObjectClass:The objectClass value for user nodes below the userBase. For example “inetOrgPerson” for Apache DS, or “user” for Microsoft Active Directory.</li>
-<li>maxRetries: (optional, default = 0) The maximum number of times to retry a failed operation. -1 means retry forever.</li>
-<li>retryStartInterval: (optional, default = 0) The interval in milliseconds to wait before the first retry. If &gt; 0, subsequent retries are made at double the proceeding one up to the retryMaxInterval described below. If = 0, the next retry is 1 and subsequent retries proceed as above.</li>
-<li>retryMaxInterval: (optional, default = 60) The maximum interval in milliseconds to wait between retries</li>
-<li>retryIntervalScale: (optional, default = 1000) The amount by which to multiply each retry interval. The default value of 1000 (milliseconds) is 1 second, so the default        retryMaxInterval of 60 is 60 seconds, or 1 minute.</li>
-</ul>
-<h1 id="Active-Directory-委派控制与权限"><a href="#Active-Directory-委派控制与权限" class="headerlink" title="Active Directory 委派控制与权限"></a>Active Directory 委派控制与权限</h1><h2 id="如何查看活动目录的权限"><a href="#如何查看活动目录的权限" class="headerlink" title="如何查看活动目录的权限"></a>如何查看活动目录的权限</h2><ol>
-<li>在Active Directory 控制台-&gt;查看-&gt;高级功能</li>
-<li>选择某个对象，右键属性-&gt;安全页<br>##<br><a href="https://social.microsoft.com/Forums/es-ES/13444af2-8718-4707-b80e-56ad4273741c" target="_blank" rel="noopener">将这些权限只应用到这个容器中的对像和/或容器上”是什么意思</a><br><a href="http://blog.sina.com.cn/s/blog_549298ca0100ssff.html" target="_blank" rel="noopener">NTFS权限分析与应用</a><h2 id="net-直接操作AD"><a href="#net-直接操作AD" class="headerlink" title=".net 直接操作AD"></a>.net 直接操作AD</h2><strong>System.DirectoryServices.ActiveDirectory</strong></li>
-</ol>
-<h2 id="Windows-Native-API"><a href="#Windows-Native-API" class="headerlink" title="Windows Native API"></a>Windows Native API</h2><p><a href="https://docs.microsoft.com/en-us/windows/desktop/api/lmaccess/nf-lmaccess-netuserchangepassword" target="_blank" rel="noopener">NetUserChangePassword</a> 有bug， 改了一次可行，<br>再改报2245错误码<br><a href="https://gist.github.com/magnetikonline/0ccdabfec58eb1929c997d22e7341e45" target="_blank" rel="noopener">Enable LDAP over SSL (LDAPS) for Microsoft Active Directory servers</a></p>
-<h2 id="Java-操作-ADSI的方案"><a href="#Java-操作-ADSI的方案" class="headerlink" title="Java 操作 ADSI的方案"></a>Java 操作 ADSI的方案</h2><h2 id="COM-对象"><a href="#COM-对象" class="headerlink" title="COM 对象"></a>COM 对象</h2><p><a href="https://stackoverflow.com/questions/44016328/accessing-com-interface-with-jna" target="_blank" rel="noopener"></a><br><a href="https://stackoverflow.com/questions/8564675/how-to-query-activedirectory-from-native-win32-i-e-not-net-code/8567800#8567800" target="_blank" rel="noopener"></a><br><a href="https://stackoverflow.com/questions/7111618/win32-how-to-validate-credentials-against-active-directory" target="_blank" rel="noopener"></a><br><a href="">Jacob</a></p>
-<h1 id="调用ADSI的血泪史"><a href="#调用ADSI的血泪史" class="headerlink" title="调用ADSI的血泪史"></a>调用ADSI的血泪史</h1><ol>
-<li>CA2W()宏转码后的字符串为0xfe字节流， 原因不详, 实际上是CA2WEx的模板类封装， 首先猜测是否是代码页的问题， 测试各种CP后依旧</li>
-<li>尝试了mbstowcs系列函数后终于成功了</li>
-<li>为了便于WCHAR转码缓冲区的管理速写了一个ArrayBuffer模板类， 一开始在构造参数列表中使用了strlen， 发现运行时AdsOpenObject报出莫名其妙的段错误，后改为构造函数不初始化<br>内部buffer， 单独调用init(count)进行内存分配(c style malloc), 终于没有段错误了</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/26/活动目录ActiveDirectory/" data-id="cjlqab5y300052ghhhi11uf8w" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-部署内网邮件服务器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/25/部署内网邮件服务器/" class="article-date">
-  <time datetime="2018-08-25T09:58:59.000Z" itemprop="datePublished">2018-08-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/25/部署内网邮件服务器/">部署内网邮件服务器</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="邮件服务器"><a href="#邮件服务器" class="headerlink" title="邮件服务器"></a>邮件服务器</h1><p>要支持Active Directory</p>
+        <p><a href="https://www.cnblogs.com/lzpong/p/6145511.html" target="_blank" rel="noopener">Linux独立安装VSCode</a><br><a href="https://askubuntu.com/questions/46930/how-can-i-set-up-password-less-ssh-login" target="_blank" rel="noopener">如何ssh直接登录</a></p>
 <ol>
-<li>Cyrus IMAP</li>
-<li><del>Kopano</del><br>团队协作方案不需要</li>
-<li><del>Zarafa</del><br>forked by <strong>Kopano</strong></li>
-<li>UW IMAP</li>
-<li>Apache James(*)</li>
-<li>Qpopper</li>
-<li><del>hMailServer</del><br><a href="https://books.google.co.uk/books?id=kfRWvKSePmAC&amp;dq=essential+com&amp;printsec=frontcover&amp;source=bn&amp;hl=en&amp;sa=X&amp;oi=book_result&amp;ct=result#v=onepage&amp;q=essential%20com&amp;f=false" target="_blank" rel="noopener">Essential COM</a><br>可以用.net interop 访问COM<br><del>pass</del>由于有异常的COMException和不可维护性</li>
-<li>agorum core</li>
-<li><del>Zentyal</del>(集成方案，社区版)</li>
-<li>Exim</li>
-<li>Citadel</li>
-<li><del>Courier Mail Server</del>(太复杂)</li>
-<li>Kolab</li>
-<li><del>Postfix</del>(iRedMail整合)</li>
-<li>OpenSMTPD</li>
-<li>Haraka</li>
-<li><del>Dovecot</del>(iRedMail整合)<br><a href="https://docs.iredmail.org/active.directory.html#enable-active-directory-integration-in-dovecot" target="_blank" rel="noopener">Integrate Microsoft Active Directory in iRedMail</a></li>
-<li><del>iRedMail</del>(部署过于复杂)</li>
-<li>davmail<br><a href="http://davmail.sourceforge.net/index.html" target="_blank" rel="noopener"></a></li>
+<li><code>ssh-keygen</code></li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id user@host</span><br><span class="line">## or if your server uses custom port no:</span><br><span class="line">ssh-copy-id &quot;user@host -p 1234&quot;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.linuxmail.info/squirrelmail-active-directory-ldap-addressbook/" target="_blank" rel="noopener"></a></p>
-<h1 id="CardDAV目录服务"><a href="#CardDAV目录服务" class="headerlink" title="CardDAV目录服务"></a>CardDAV目录服务</h1><ol>
-<li><a href="https://sourceforge.net/projects/outlookcaldavsynchronizer/" target="_blank" rel="noopener">outlookcaldavsynchronizer</a></li>
+<h3 id="手动调整x分辨率"><a href="#手动调整x分辨率" class="headerlink" title="手动调整x分辨率"></a>手动调整x分辨率</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Here are the steps</span><br><span class="line"></span><br><span class="line">Use xrandr to make sure that the new mode can fit within the maximum framebuffer size</span><br><span class="line">Code:</span><br><span class="line">xrandr | grep maximum</span><br><span class="line">Use gtf to create a mode line</span><br><span class="line">Code:</span><br><span class="line">gtf 1440 900 59.9</span><br><span class="line">Add new mode using xrandr</span><br><span class="line">Code:</span><br><span class="line">xrandr --newmode &quot;1440x900_59.90&quot;  106.29  1440 1520 1672 1904  900 901 904 932  -HSync +Vsync</span><br><span class="line">Add this newly added mode to the desired output (VGA/LVDS etc)</span><br><span class="line">Code:</span><br><span class="line">xrandr --addmode VGA 1440x900_59.90</span><br><span class="line">Choose the new mode</span><br><span class="line">Code:</span><br><span class="line">xrandr --output VGA --mode 1440x900_59.90</span><br><span class="line">~</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/21/LinuxAdmin/" data-id="cjmctgm48000228hhc115nf36" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-DBA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/21/DBA/" class="article-date">
+  <time datetime="2018-09-21T02:48:00.000Z" itemprop="datePublished">2018-09-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/21/DBA/">DBA</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="https://dbaplus.cn/news-11-1267-1.html" target="_blank" rel="noopener">解锁MySQL备份恢复的4种正确姿势</a></li>
+<li><a href="http://www.zsythink.net/archives/1484" target="_blank" rel="noopener">xtrabackup流备份</a></li>
+<li><a href="http://906179271.iteye.com/blog/2295419" target="_blank" rel="noopener"></a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/21/DBA/" data-id="cjmctgm3o000028hhqocfvd5i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nanUI" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/18/nanUI/" class="article-date">
+  <time datetime="2018-09-18T04:03:06.000Z" itemprop="datePublished">2018-09-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/18/nanUI/">nanUI</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="API-说明"><a href="#API-说明" class="headerlink" title="API 说明"></a>API 说明</h1><ol>
+<li>Bootstrap.RegisterAssemblyResources<br>baseDir:<br>调用了AssemblyResourceHandler的构造器,赋予basePath属性</li>
 </ol>
-<h1 id="Apache-James-调研日志"><a href="#Apache-James-调研日志" class="headerlink" title="Apache James 调研日志"></a>Apache James 调研日志</h1><h2 id="2018-08-29"><a href="#2018-08-29" class="headerlink" title="2018-08-29"></a>2018-08-29</h2><p>下载spring版本并解压到/opt/, 按照教程逐一配置conf下的各个模块的配置，还有需要在lib目录下软链接postgre jdbc driver</p>
-<h3 id="暂不采用mysql的原因"><a href="#暂不采用mysql的原因" class="headerlink" title="暂不采用mysql的原因"></a>暂不采用mysql的原因</h3><p>mysql（innodb）的索引长度不能超过3072bytes，用utf8mb4很容易就超过了该限制，导致jpa初始化建表时报索引过长错误</p>
-<h2 id="2018-08-30"><a href="#2018-08-30" class="headerlink" title="2018-08-30"></a>2018-08-30</h2><p>配置mx记录, imap主机和smtp主机均设置为mail.beiruosi.nanjing</p>
-<h2 id="2018-09-01-配置"><a href="#2018-09-01-配置" class="headerlink" title="2018-09-01 配置"></a>2018-09-01 配置</h2><p><a href="http://alikevin2011.iteye.com/blog/1173118" target="_blank" rel="noopener"></a></p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ol>
+<li><a href="https://stackoverflow.com/questions/27757/how-can-i-discover-the-path-of-an-embedded-resource" target="_blank" rel="noopener">获取资源路径</a></li>
+</ol>
+<h1 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h1><p>引入静态css， 用于NanUI窗口标题栏样式<br><a href="https://segmentfault.com/a/1190000012728854" target="_blank" rel="noopener">vue引入静态css</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/25/部署内网邮件服务器/" data-id="cjlqab5y800072ghhbd53phrz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/18/nanUI/" data-id="cjmctgm4z000f28hhutlsj94i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -381,10 +270,10 @@
 
 
   
-    <article id="post-开源方案汇总" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-html5-web" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/24/开源方案汇总/" class="article-date">
-  <time datetime="2018-08-24T10:40:40.000Z" itemprop="datePublished">2018-08-24</time>
+    <a href="/2018/09/14/html5-web/" class="article-date">
+  <time datetime="2018-09-14T02:01:52.000Z" itemprop="datePublished">2018-09-14</time>
 </a>
     
   </div>
@@ -395,7 +284,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/开源方案汇总/">开源方案汇总</a>
+      <a class="article-title" href="/2018/09/14/html5-web/">html5-web</a>
     </h1>
   
 
@@ -403,16 +292,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://blog.csdn.net/leansmall/article/details/72614488" target="_blank" rel="noopener">试试54款开源服务器软件</a></p>
+        <h1 id="Grid控件"><a href="#Grid控件" class="headerlink" title="Grid控件"></a>Grid控件</h1><p><a href="https://hk.saowen.com/a/5740ede3608231dc7c87a4ebf823b8c6ba3ab5b66fe2c8570b718511a17ac7d3" target="_blank" rel="noopener"></a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/开源方案汇总/" data-id="cjlqab5yf000a2ghhsn9w6ckr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/14/html5-web/" data-id="cjmctgm4w000d28hhzmn7bohk" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/open-source/">open_source</a></li></ul>
-
     </footer>
   </div>
   
@@ -420,10 +307,10 @@
 
 
   
-    <article id="post-vs2017开发笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-golang" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/24/vs2017开发笔记/" class="article-date">
-  <time datetime="2018-08-24T09:39:48.000Z" itemprop="datePublished">2018-08-24</time>
+    <a href="/2018/09/14/golang/" class="article-date">
+  <time datetime="2018-09-14T00:43:53.000Z" itemprop="datePublished">2018-09-14</time>
 </a>
     
   </div>
@@ -434,7 +321,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/vs2017开发笔记/">vs2017开发笔记</a>
+      <a class="article-title" href="/2018/09/14/golang/">golang</a>
     </h1>
   
 
@@ -442,80 +329,144 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2018-08-24"><a href="#2018-08-24" class="headerlink" title="2018-08-24"></a>2018-08-24</h1><p>调研海康威视的sdk， 又要摸vs2017 c++工程了</p>
-<h2 id="引用动态链接库dll目录的配置方法"><a href="#引用动态链接库dll目录的配置方法" class="headerlink" title="引用动态链接库dll目录的配置方法"></a>引用动态链接库dll目录的配置方法</h2><p>在VS2015中引用动态链接库dll主要有两种方法：</p>
+        <p><a href="https://www.zhihu.com/question/21409296" target="_blank" rel="noopener">为什么要使用 Go 语言？Go 语言的优势在哪里</a></p>
 <ul>
-<li>法1：配置属性-&gt;调试-&gt;环境：输入path=包含dll文件的文件夹路径，</li>
-</ul>
-<p>【注意】path(空格)=路径、path=(空格)路径、path(空格)=(空格)路径等写法都会导致dll引用失败。</p>
-<ul>
-<li>法2：将dll文件拷贝到生成的.exe所在的文件夹中</li>
-</ul>
-<p><a href="https://ask.csdn.net/questions/356811" target="_blank" rel="noopener">exe加载DLL的时候会有一系列的搜索路径</a><br>还有通过vs工程配置中的环境：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">工程的本地化配置：</span><br><span class="line"></span><br><span class="line">通过设置vs工程的环境变量，实现对单个工程本地化配置的目标，环境变量可随整个工程迁移，设置方法：vs工程属性--&gt;配置属性--&gt;调试--&gt;环境，例如，我们要引用../../bin/目录里面的dll，那么我们可以设置为：path=%path%;..\..\bin</span><br></pre></td></tr></table></figure></p>
-<p>因为我把lib和dll的库文件放到一个目录中， 头文件单独放， 把引用目录， 库目录都设置了一下， 还有就是调试时的环境变量也配置了， 目前可以运行时找到dll</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/24/vs2017开发笔记/" data-id="cjlqab5xt00022ghhsrqwb82x" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vs2017/">vs2017</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-vue开发日记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/21/vue开发日记/" class="article-date">
-  <time datetime="2018-08-21T08:52:27.000Z" itemprop="datePublished">2018-08-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/21/vue开发日记/">vue开发日记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="2018-08-21"><a href="#2018-08-21" class="headerlink" title="2018-08-21"></a>2018-08-21</h1><h2 id="开发表格行编辑功能"><a href="#开发表格行编辑功能" class="headerlink" title="开发表格行编辑功能"></a>开发表格行编辑功能</h2><ol>
-<li>按行编辑<br>将<code>el-table</code>中的scope传入到方法beginEdit进行绑定，</li>
-<li>弹出对话框编辑</li>
-<li>编辑后可回滚<ul>
-<li>利用<code>pureJs = Object.assign({}, scope.row)</code>可以将reactive对象(scope.row)导出为纯js对象</li>
-<li>利用<code>Object.assign(scope.row, pureJs)</code>可以为reactive对象进行赋值</li>
+<li>Go成功的项目<ul>
+<li>nsq：bitly开源的消息队列系统，性能非常高，目前他们每天处理数十亿条的消息</li>
+<li>docker:基于lxc的一个虚拟打包工具，能够实现PAAS平台的组建。</li>
+<li>packer:用来生成不同平台的镜像文件，例如VM、vbox、AWS等，作者是vagrant的作者</li>
+<li>skynet：分布式调度框架</li>
+<li>Doozer：分布式同步工具，类似ZooKeeper</li>
+<li>Heka：mazila开源的日志处理系统</li>
+<li>cbfs：couchbase开源的分布式文件系统</li>
+<li>tsuru：开源的PAAS平台，和SAE实现的功能一模一样</li>
+<li>groupcache：memcahe作者写的用于Google下载系统的缓存系统</li>
+<li>god：类似redis的缓存系统，但是支持分布式和扩展性</li>
+<li>gor：网络流量抓包和重放工具以下是一些公司，只是一小部分：</li>
 </ul>
 </li>
-<li>可提交</li>
-</ol>
-<h2 id="gson-deserialize时部分字段为空"><a href="#gson-deserialize时部分字段为空" class="headerlink" title="gson deserialize时部分字段为空"></a>gson deserialize时部分字段为空</h2><p>原因是这些字段名是多单词下划线小写格式, 需要配置gson:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Gson gson = <span class="keyword">new</span> GsonBuilder()</span><br><span class="line">    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)</span><br><span class="line">    .create()</span><br></pre></td></tr></table></figure></p>
-<h1 id="2018-08-23"><a href="#2018-08-23" class="headerlink" title="2018-08-23"></a>2018-08-23</h1><h2 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h2><ul>
-<li>(element-ui)table组件的expand列只能有一列</li>
 </ul>
-<h2 id="LocalDate-如何获取前一天"><a href="#LocalDate-如何获取前一天" class="headerlink" title="LocalDate 如何获取前一天"></a>LocalDate 如何获取前一天</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">LocalDate day = LocalDate.parse(<span class="string">"2018-08-01"</span>);</span><br><span class="line">LocalDate yesterday = day.minus(Period.ofDays(<span class="number">1</span>));</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">LocalDate yesterday2 = day.minusDays(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="Vue中如何watch-对象的单个属性"><a href="#Vue中如何watch-对象的单个属性" class="headerlink" title="Vue中如何watch 对象的单个属性"></a>Vue中如何watch 对象的单个属性</h2><p>用<strong>obj.a</strong>来监听obj的a属性:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">  <span class="string">'obj.a'</span>: &#123;</span><br><span class="line">    handler(newName, oldName) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'obj.a changed'</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    immediate: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// deep: true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125; </span><br><span class="line">作者：Dunizb</span><br><span class="line">链接：https:<span class="comment">//juejin.im/post/5ae91fa76fb9a07aa7677543</span></span><br><span class="line">来源：掘金</span><br><span class="line">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure></p>
+<p>作者：asta谢<br>链接：<a href="https://www.zhihu.com/question/21409296/answer/18184584" target="_blank" rel="noopener">https://www.zhihu.com/question/21409296/answer/18184584</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/21/vue开发日记/" data-id="cjlqab5yi000b2ghhhheomfcq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/14/golang/" data-id="cjmctgm4n000828hhxm3l8u9i" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+    </footer>
+  </div>
+  
+</article>
 
+
+  
+    <article id="post-kms" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/13/kms/" class="article-date">
+  <time datetime="2018-09-13T02:28:39.000Z" itemprop="datePublished">2018-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/13/kms/">kms</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://jixun.moe/post/kms-setup-batch/" target="_blank" rel="noopener"></a><br>windows 8+ 用slmgr配置kms， office16使用gvlk</p>
+<p><a href="https://kms.library.hk/" target="_blank" rel="noopener"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/13/kms/" data-id="cjmctgm4r000a28hhgr0m9h4d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nginx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/nginx/" class="article-date">
+  <time datetime="2018-09-12T02:15:28.000Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/nginx/">nginx</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="nginx-转发添加简单认证"><a href="#nginx-转发添加简单认证" class="headerlink" title="nginx 转发添加简单认证"></a>nginx 转发添加简单认证</h1><p><a href="http://www.cnblogs.com/wangxiaoqiangs/p/6184181.html" target="_blank" rel="noopener"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/nginx/" data-id="cjmctgm4x000e28hh1oera69e" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-c-sharp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/11/c-sharp/" class="article-date">
+  <time datetime="2018-09-11T10:37:35.000Z" itemprop="datePublished">2018-09-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/11/c-sharp/">c_sharp</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://www.jb51.net/article/123046.htm" target="_blank" rel="noopener">c#匿名对象，动态类</a></p>
+<h1 id="vs2017-通配符添加嵌入式资源"><a href="#vs2017-通配符添加嵌入式资源" class="headerlink" title="vs2017 通配符添加嵌入式资源"></a>vs2017 通配符添加嵌入式资源</h1><p>用文本编辑器打开*.csproj， 按照如下格式添加EmbeddedResource后重新加载项目即可<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ItemGroup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">EmbeddedResource</span> <span class="attr">Include</span>=<span class="string">"vueapp/dist/**"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ItemGroup</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/11/c-sharp/" data-id="cjmctgm4h000628hhe13h071n" class="article-share-link">Share</a>
+      
+      
     </footer>
   </div>
   
@@ -524,6 +475,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -568,23 +524,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/06/java-gui/">java-gui</a>
+            <a href="/2018/09/22/Python3/">Python3</a>
           </li>
         
           <li>
-            <a href="/2018/09/05/MFC-ATL/">MFC_ATL</a>
+            <a href="/2018/09/22/WindowsServerAdmin/">WindowsServerAdmin</a>
           </li>
         
           <li>
-            <a href="/2018/09/04/java-native-access/">java-native-access</a>
+            <a href="/2018/09/21/LinuxAdmin/">LinuxAdmin</a>
           </li>
         
           <li>
-            <a href="/2018/08/30/门禁布线/">门禁布线</a>
+            <a href="/2018/09/21/DBA/">DBA</a>
           </li>
         
           <li>
-            <a href="/2018/08/30/无盘技术/">无盘技术</a>
+            <a href="/2018/09/18/nanUI/">nanUI</a>
           </li>
         
       </ul>

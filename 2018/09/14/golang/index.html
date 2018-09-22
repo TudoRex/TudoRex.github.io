@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>golang | TudoRex小屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="为什么要使用 Go 语言？Go 语言的优势在哪里  Go成功的项目 nsq：bitly开源的消息队列系统，性能非常高，目前他们每天处理数十亿条的消息 docker:基于lxc的一个虚拟打包工具，能够实现PAAS平台的组建。 packer:用来生成不同平台的镜像文件，例如VM、vbox、AWS等，作者是vagrant的作者 skynet：分布式调度框架 Doozer：分布式同步工具，类似ZooKee">
+<meta property="og:type" content="article">
+<meta property="og:title" content="golang">
+<meta property="og:url" content="http://yoursite.com/2018/09/14/golang/index.html">
+<meta property="og:site_name" content="TudoRex小屋">
+<meta property="og:description" content="为什么要使用 Go 语言？Go 语言的优势在哪里  Go成功的项目 nsq：bitly开源的消息队列系统，性能非常高，目前他们每天处理数十亿条的消息 docker:基于lxc的一个虚拟打包工具，能够实现PAAS平台的组建。 packer:用来生成不同平台的镜像文件，例如VM、vbox、AWS等，作者是vagrant的作者 skynet：分布式调度框架 Doozer：分布式同步工具，类似ZooKee">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-22T02:20:50.861Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="golang">
+<meta name="twitter:description" content="为什么要使用 Go 语言？Go 语言的优势在哪里  Go成功的项目 nsq：bitly开源的消息队列系统，性能非常高，目前他们每天处理数十亿条的消息 docker:基于lxc的一个虚拟打包工具，能够实现PAAS平台的组建。 packer:用来生成不同平台的镜像文件，例如VM、vbox、AWS等，作者是vagrant的作者 skynet：分布式调度框架 Doozer：分布式同步工具，类似ZooKee">
+  
+    <link rel="alternate" href="/atom.xml" title="TudoRex小屋" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">TudoRex小屋</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-golang" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/14/golang/" class="article-date">
+  <time datetime="2018-09-14T00:43:53.000Z" itemprop="datePublished">2018-09-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      golang
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://www.zhihu.com/question/21409296" target="_blank" rel="noopener">为什么要使用 Go 语言？Go 语言的优势在哪里</a></p>
+<ul>
+<li>Go成功的项目<ul>
+<li>nsq：bitly开源的消息队列系统，性能非常高，目前他们每天处理数十亿条的消息</li>
+<li>docker:基于lxc的一个虚拟打包工具，能够实现PAAS平台的组建。</li>
+<li>packer:用来生成不同平台的镜像文件，例如VM、vbox、AWS等，作者是vagrant的作者</li>
+<li>skynet：分布式调度框架</li>
+<li>Doozer：分布式同步工具，类似ZooKeeper</li>
+<li>Heka：mazila开源的日志处理系统</li>
+<li>cbfs：couchbase开源的分布式文件系统</li>
+<li>tsuru：开源的PAAS平台，和SAE实现的功能一模一样</li>
+<li>groupcache：memcahe作者写的用于Google下载系统的缓存系统</li>
+<li>god：类似redis的缓存系统，但是支持分布式和扩展性</li>
+<li>gor：网络流量抓包和重放工具以下是一些公司，只是一小部分：</li>
+</ul>
+</li>
+</ul>
+<p>作者：asta谢<br>链接：<a href="https://www.zhihu.com/question/21409296/answer/18184584" target="_blank" rel="noopener">https://www.zhihu.com/question/21409296/answer/18184584</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/14/golang/" data-id="cjmctgm4n000828hhxm3l8u9i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/09/14/html5-web/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          html5-web
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/13/kms/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">kms</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/open-source/">open_source</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vs2017/">vs2017</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/open-source/" style="font-size: 10px;">open_source</a> <a href="/tags/vs2017/" style="font-size: 10px;">vs2017</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/22/Python3/">Python3</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/22/WindowsServerAdmin/">WindowsServerAdmin</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/21/LinuxAdmin/">LinuxAdmin</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/21/DBA/">DBA</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/18/nanUI/">nanUI</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
